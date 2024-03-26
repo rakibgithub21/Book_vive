@@ -9,7 +9,7 @@ const BooksCards = () => {
             .then(res => res.json())
             .then(data => setBooks(data))
     }, [])
-    console.log(books);
+    // console.log(books);
     return (
         <div className="my-14 p-3 md:p-0">
             <h3 className="text-center font-bold text-4xl mb-10">Books</h3>
