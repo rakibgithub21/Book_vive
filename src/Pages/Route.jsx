@@ -9,6 +9,7 @@ import BookDetails from "../components/BookDetails/BookDetails";
 import ErrorPage from "./ErrorPage";
 import CustomerReview from "./CustomerReview";
 import SuccesStory from "./SuccesStory";
+import BookRecommendationsPage from "./BookRecommendationsPage ";
 
 export const router = createBrowserRouter([
     {
@@ -40,7 +41,11 @@ export const router = createBrowserRouter([
             {
                 path: '/success',
                 element:<SuccesStory></SuccesStory>
-            }
+            },
+            {
+                path: '/recommendations',
+                element:<BookRecommendationsPage></BookRecommendationsPage>
+            },
         ]
     },
 

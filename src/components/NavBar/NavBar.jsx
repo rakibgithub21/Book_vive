@@ -13,6 +13,7 @@ const NavBar = () => {
                         <li><NavLink to='/'>Home</NavLink></li>
                         <li><NavLink to='/listedbooks'>Listed Books</NavLink></li>
                         <li><NavLink to='/pagestoread'>Page to Read</NavLink></li>
+                        <li><NavLink to='/recommendations'>Recommendation</NavLink></li>
                         <li><NavLink to='/review'>Review</NavLink></li>
                     </ul>
                 </div>
@@ -23,6 +24,7 @@ const NavBar = () => {
                     <li><NavLink to='/'>Home</NavLink></li>
                     <li><NavLink to='/listedbooks'>Listed Books</NavLink></li>
                     <li><NavLink to='/pagestoread'>Page to Read</NavLink></li>
+                    <li><NavLink to='/recommendations'>Recommendation</NavLink></li>
                     <li><NavLink to='/review'>Review</NavLink></li>
                 </ul>
             </div>

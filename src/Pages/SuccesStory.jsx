@@ -38,7 +38,7 @@ const SuccesStory = () => {
                 <p className="text-lg text-gray-700 mb-8">
                     <span className="font-bold">Join Us on the Journey</span>
                     <br />
-                    We invite you to join us on this incredible journey as we continue to redefine the way the world discovers and experiences books. Whether youre a lifelong bookworm or just beginning your reading adventure, there's a place for you at Book Vibe.
+                    We invite you to join us on this incredible journey as we continue to redefine the way the world discovers and experiences books. Whether youre a lifelong bookworm or just beginning your reading adventure, there is a place for you at Book Vibe.
                 </p>
                 <p className="text-lg text-gray-700">
                     Thank you for being a part of our story.
