@@ -11,15 +11,21 @@ Currently, two official plugins are available:
 # Book Vive Website
 
 ## Live Site URL
-<!-- [Visit Book Vive](https://www.bookvive.com) -->
+[Visit Book Vive](https://app.netlify.com/sites/taupe-wisp-f82bc3/overview)
+
+## Technologies Used
+- **React**: Utilized for building interactive user interfaces and components.
+- **React Router**: Implemented for navigation and routing within the single-page application.
+- **React Icons**: Integrated for easily adding icons from popular icon libraries.
+- **Tailwind CSS**: Used for styling the UI components, enabling rapid development with utility-first CSS classes.
 
 ## Features and Characteristics
 
-- **Diverse Book Selection**: Explore a diverse selection of books spanning various genres, including fiction, non-fiction, fantasy, thriller, self-help, and more, curated to cater to every reader's tastes.
-- **Book Reviews and Recommendations**: Discover insightful book reviews and recommendations from avid readers to help you find your next captivating read.
-- **Personalized Reading Lists**: Create personalized reading lists based on your preferences, favorite authors, and genres, ensuring that you always have a curated selection of books to delve into.
-- **Author Interviews and Insights**: Gain deeper insights into your favorite authors and their works through exclusive interviews, behind-the-scenes glimpses, and thought-provoking articles.
-- **Interactive Book Discussions**: Engage in vibrant discussions with fellow book enthusiasts, participate in virtual book clubs, and share your thoughts, opinions, and interpretations of your beloved reads.
+- **Dynamic Book Catalog**: Explore a dynamic catalog of books across various genres, with seamless navigation powered by React Router.
+- **Engaging User Interface**: Enjoy a visually appealing and interactive user interface styled with Tailwind CSS, making browsing through books a delightful experience.
+- **Personalized Recommendations**: Receive personalized book recommendations based on your reading preferences and history, utilizing the power of React to dynamically adjust content.
+- **Interactive Book Discussions**: Engage in lively discussions with other users, facilitated by React components for seamless interaction and real-time updates.
+- **Efficient Navigation**: Navigate through the website effortlessly with smooth transitions and intuitive user interfaces, thanks to the routing capabilities of React Router.
 
-Immerse yourself in the world of literature and let Book Vive be your ultimate companion on your reading journey!
+Immerse yourself in the world of literature with Book Vive, where cutting-edge technologies like React and Tailwind CSS meet the love for reading!
 
