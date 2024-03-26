@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 # Book Vive Website
 
 ## Live Site URL
-[Visit Book Vive](https://app.netlify.com/sites/taupe-wisp-f82bc3/overview)
+[Visit Book Vive](https://taupe-wisp-f82bc3.netlify.app/)
 
 ## Technologies Used
 - **React**: Utilized for building interactive user interfaces and components.
