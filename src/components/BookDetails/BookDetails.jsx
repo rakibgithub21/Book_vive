@@ -2,12 +2,11 @@ import { useLoaderData, useParams } from "react-router-dom";
 
 
 const BookDetails = () => {
-    const book = useLoaderData();
-    console.log(book);
+    const books = useLoaderData();
     const { id } = useParams();
     console.log(id);
-    const matched = book.find(b => b.bookId == id);
-    const { image, bookName, review, author, category, tags } = matched;
+    const book = books.find(book => book.bookId == id);
+    const { image, bookName, review, author, category, tags } = book;
     return (
         <div className="lg:grid grid-cols-2 gap-10">
             <div className="lg:col-span-1 bg-[#1313130d] flex justify-center">
