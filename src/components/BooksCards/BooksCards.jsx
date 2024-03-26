@@ -11,9 +11,9 @@ const BooksCards = () => {
     }, [])
     console.log(books);
     return (
-        <div className="mt-14">
+        <div className="my-14 p-3 md:p-0">
             <h3 className="text-center font-bold text-4xl">Books</h3>
-            <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
                     books.map(book => <Book
                         key={book.bookId}
