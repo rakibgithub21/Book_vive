@@ -7,6 +7,8 @@ import ListedBooks from "./ListedBooks";
 import PagesToRead from "./PagesToRead";
 import BookDetails from "../components/BookDetails/BookDetails";
 import ErrorPage from "./ErrorPage";
+import CustomerReview from "./CustomerReview";
+import SuccesStory from "./SuccesStory";
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +32,14 @@ export const router = createBrowserRouter([
                 path: '/bookdetails/:id',
                 element: <BookDetails></BookDetails>,
                 loader: ({ params }) => fetch('../allbooks.json')
+            },
+            {
+                path: '/review',
+                element:<CustomerReview></CustomerReview>
+            },
+            {
+                path: '/success',
+                element:<SuccesStory></SuccesStory>
             }
         ]
     },
