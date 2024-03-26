@@ -1,4 +1,5 @@
 import Banner from "../components/Banner/Banner";
+import BooksCards from "../components/BooksCards/BooksCards";
 
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div className="mt-10">
             {/* Banner */}
             <Banner></Banner>
+            <BooksCards></BooksCards>
         </div>
     );
 };
