@@ -6,28 +6,30 @@ import Home from "./Home";
 import ListedBooks from "./ListedBooks";
 import PagesToRead from "./PagesToRead";
 import BookDetails from "../components/BookDetails/BookDetails";
+import ErrorPage from "./ErrorPage";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
-                element:<Home></Home>
+                element: <Home></Home>
             },
             {
                 path: '/listedbooks',
-                element:<ListedBooks></ListedBooks>
+                element: <ListedBooks></ListedBooks>
             },
             {
                 path: '/pagestoread',
-                element:<PagesToRead></PagesToRead>
+                element: <PagesToRead></PagesToRead>
             },
             {
                 path: '/bookdetails/:id',
                 element: <BookDetails></BookDetails>,
-                loader:({params})=>fetch('../allbooks.json')
+                loader: ({ params }) => fetch('../allbooks.json')
             }
         ]
     },

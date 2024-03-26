@@ -48,7 +48,7 @@ const BookDetails = () => {
     return (
         <div className="lg:grid grid-cols-2 gap-10">
             <div className="lg:col-span-1 bg-[#1313130d] flex justify-center">
-                <img className="w-[425px] object-cover p-14" src={image} alt="" />
+                <img className="w-[425px] object-cover p-5" src={image} alt="" />
             </div>
             <div className="lg:col-span-1 space-y-7">
                 <h1 className="text-4xl font-bold">{bookName}</h1>
