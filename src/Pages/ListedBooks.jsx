@@ -4,29 +4,41 @@ import 'react-tabs/style/react-tabs.css';
 import Read from "./Read";
 import Wish from "./Wish";
 
-
 const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
-
-
     const [readLs, setReadLs] = useState([]);
     const [wishLs, setWishLs] = useState([]);
 
     useEffect(() => {
         const saveData = JSON.parse(localStorage.getItem('readList')) || [];
-        // console.log(saveData);
         setReadLs(saveData)
     }, [])
-    console.log(readLs);
 
     useEffect(() => {
         const saveData = JSON.parse(localStorage.getItem('wishList')) || [];
         setWishLs(saveData);
     }, [])
-    console.log(wishLs);
 
+    const handleSorting = e => {
+        let sortedList = [...readLs];
+        let sortWishLs = [...wishLs]
 
+        if (e.target.value === 'publishedYear') {
+            sortedList.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+            sortWishLs.sort((a,b)=>b.yearOfPublishing - a.yearOfPublishing)
+        }
+        else if (e.target.value === 'ratings') {
+            sortedList.sort((a, b) => b.rating - a.rating);
+            sortWishLs.sort((a, b) => b.rating - a.rating);
+        }
+        else if (e.target.value === 'pageNumber') {
+            sortedList.sort((a, b) => b.totalPages - a.totalPages);
+            sortWishLs.sort((a, b) => b.totalPages - a.totalPages);
+        }
 
+        setReadLs(sortedList);
+        setWishLs(sortWishLs);
+    }
 
     return (
         <div className="mt-9">
@@ -35,9 +47,8 @@ const ListedBooks = () => {
             </div>
 
             <div className="text-center my-10">
-
-                <select id="sortSelect" className="p-2 border bg-[#23BE0A] border-gray-300 rounded-md text-white font-medium focus:outline-none focus:border-blue-500 " defaultValue="default">
-                    <option value="default" disabled>Sort By</option>
+                <select onChange={handleSorting} id="sortSelect" className="p-2 border bg-[#23BE0A] border-gray-300 rounded-md text-white font-medium focus:outline-none focus:border-blue-500 " defaultValue="default">
+                    <option  value="default" disabled>Sort By</option>
                     <option value="publishedYear">Published Year</option>
                     <option value="ratings">Ratings</option>
                     <option value="pageNumber">Page Number</option>
@@ -50,20 +61,10 @@ const ListedBooks = () => {
                     <Tab>Wishlist Books</Tab>
                 </TabList>
                 <TabPanel>
-                    {
-                        readLs.map(read => <Read
-                            key={read.bookId}
-                            read={read}
-                        ></Read>)
-                    }
+                    {readLs.map(read => <Read key={read.bookId} read={read} />)}
                 </TabPanel>
                 <TabPanel>
-                    {
-                        wishLs.map(wish => <Wish
-                            key={wish.bookId}
-                            wish={wish}
-                        ></Wish>)
-                    }
+                    {wishLs.map(wish => <Wish key={wish.bookId} wish={wish} />)}
                 </TabPanel>
             </Tabs>
         </div>

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
 const Read = ({ read }) => {
-    console.log(read);
+    // console.log(read);
     const { image, yearOfPublishing, totalPages, tags, rating, bookName, author, publisher, category, bookId } = read;
     return (
         <div className="border my-5 gap-5 flex flex-col md:flex-row border-[#13131326] p-5 rounded-2xl">

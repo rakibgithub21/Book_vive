@@ -8,7 +8,6 @@ import 'react-toastify/dist/ReactToastify.css';
 const BookDetails = () => {
     const books = useLoaderData();
     const { id } = useParams();
-    // console.log(id);
     const book = books.find(book => book.bookId == id);
     const { image, bookName, review, author, category, tags } = book;
 
@@ -27,12 +26,10 @@ const BookDetails = () => {
     const addtoWishLs = () => {
 
         const readList = JSON.parse(localStorage.getItem('readList')) || [];
-        // console.log(readList);
         const wishlist = JSON.parse(localStorage.getItem('wishList')) || [];
-        // console.log(wishlist);
-
         const exist = readList.find(read => read.bookId == id);
-        if (exist) {
+        const wExist = wishlist.find(read =>read.bookId == id)
+        if (exist || wExist) {
             toast.error('You already read this');
         }
         else {
