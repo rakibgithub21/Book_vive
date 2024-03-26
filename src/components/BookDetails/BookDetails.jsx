@@ -1,5 +1,9 @@
 import { useLoaderData, useParams } from "react-router-dom";
 
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -12,16 +16,16 @@ const BookDetails = () => {
         const saveData = JSON.parse(localStorage.getItem('readList')) || [];
         const isExists = saveData.find(data => data.bookId == id);
         if (isExists) {
-            alert('Bhai data age thekei ase')
+            toast.error('You already read this')
         } else {
             saveData.push(book);
             localStorage.setItem('readList', JSON.stringify(saveData));
-            console.log('read succesfully');
+            toast.success('You read succesfully')
         }
     }
 
     const addtoWishLs = () => {
-       
+
         const readList = JSON.parse(localStorage.getItem('readList')) || [];
         // console.log(readList);
         const wishlist = JSON.parse(localStorage.getItem('wishList')) || [];
@@ -29,12 +33,12 @@ const BookDetails = () => {
 
         const exist = readList.find(read => read.bookId == id);
         if (exist) {
-            console.log('alredy read this book');
+            toast.error('You already read this');
         }
         else {
             wishlist.push(book);
             localStorage.setItem('wishList', JSON.stringify(wishlist));
-            console.log('added succesfully');
+            toast.success('You added succesfully');
         }
 
 
@@ -94,6 +98,7 @@ const BookDetails = () => {
                     </button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
