@@ -6,8 +6,8 @@ const BookRecommendationsPage = () => {
             title: "Science Fiction Classics",
             description: "Explore timeless works of science fiction that have shaped the genre.",
             books: [
-                { title: "Dune", author: "Frank Herbert", backgroundColor: "#FECACA", rating: 4.5, publishedYear: 1965 },
-                { title: "Foundation", author: "Isaac Tan", backgroundColor: "#FCD34D", rating: 4.8, publishedYear: 1951 },
+                { title: "Dune", author: "Fank Herbert", backgroundColor: "#FECACA", rating: 4.5, publishedYear: 1965 },
+                { title: "Foundation", author: "Iseac Tan", backgroundColor: "#FCD34D", rating: 4.8, publishedYear: 1951 },
                 { title: "Neuromancer", author: "William Gimbson", backgroundColor: "#A5B4FC", rating: 4.3, publishedYear: 1984 }
             ]
         },
@@ -15,8 +15,8 @@ const BookRecommendationsPage = () => {
             title: "Mystery Thrillers",
             description: "Get lost in gripping mysteries and thrilling suspense.",
             books: [
-                { title: "The Girl with the Dragon Tattoo", author: "Stieg Larsson", backgroundColor: "#C4FCEA", rating: 4.6, publishedYear: 2005 },
-                { title: "Gone Girl", author: "Gillian Jhon", backgroundColor: "#FBCFE8", rating: 4.2, publishedYear: 2012 },
+                { title: "The Girl with the Dragon Tattoo", author: "Stieg legason", backgroundColor: "#C4FCEA", rating: 4.6, publishedYear: 2005 },
+                { title: "Gone Girl", author: "Gillyan Jhon", backgroundColor: "#FBCFE8", rating: 4.2, publishedYear: 2012 },
                 { title: "The Da Vinci Code", author: "Dan Bread", backgroundColor: "#FED7AA", rating: 4.1, publishedYear: 2003 }
             ]
         },
