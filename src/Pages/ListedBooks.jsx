@@ -18,7 +18,7 @@ const ListedBooks = () => {
         setReadLs(saveData)
     }, [])
     console.log(readLs);
-    
+
     useEffect(() => {
         const saveData = JSON.parse(localStorage.getItem('wishList')) || [];
         setWishLs(saveData);
@@ -43,7 +43,7 @@ const ListedBooks = () => {
                     <option value="pageNumber">Page Number</option>
                 </select>
             </div>
-            
+
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
                     <Tab>Read Books</Tab>
