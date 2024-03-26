@@ -47,18 +47,18 @@ const BookDetails = () => {
 
     return (
         <div className="lg:grid grid-cols-2 gap-10">
-            <div className="lg:col-span-1 bg-[#1313130d] flex justify-center">
+            <div className="lg:col-span-1 bg-[#1313130d] flex justify-center m-3 md:m-0 rounded-xl">
                 <img className="w-[425px] object-cover p-5" src={image} alt="" />
             </div>
-            <div className="lg:col-span-1 space-y-7">
+            <div className="lg:col-span-1 space-y-7 p-3 md:p-0">
                 <h1 className="text-4xl font-bold">{bookName}</h1>
                 <h3 className="text-xl font-medium text-[#131313cc]">By: {author}</h3>
                 <hr />
                 <h3 className="text-xl font-medium text-[#131313cc]">{category}</h3>
                 <hr />
                 <p className="text-[#131313b3]"><span className="font-bold">Review : </span>{review}</p>
-                <div className="flex gap-5 items-center">
-                    <p className="font-bold">Tags </p>
+                <div className="md:flex gap-5 items-center">
+                    <p className="font-bold text-center md:text-start mb-5 md:mb-0 ">Tags </p>
                     <p className="flex gap-5">{tags.map((tag, index) => <span
                         className="py-2 px-4 bg-[#23be0a0d] rounded-3xl text-[#23BE0A] font-medium"
                         key={index}

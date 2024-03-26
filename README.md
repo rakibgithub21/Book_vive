@@ -11,6 +11,7 @@
 - **React Icons**: Integrated for easily adding icons from popular icon libraries.
 - **Daisy UI**: Used for styling UI components with pre-designed, accessible, and customizable components.
 - **React Tabs**: Implemented for organizing content into tabbed sections, enhancing user experience and navigation.
+- **Tailwind Custom Button**: Implemented for organizing So Many tailwind custom button.
 - **React Toastify**: Integrated for displaying user-friendly toast notifications, enhancing the user experience with feedback messages.
 - **Recharts**: Utilized for data visualization, creating interactive and visually appealing charts and graphs.
 
