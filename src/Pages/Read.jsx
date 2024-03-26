@@ -2,10 +2,11 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoPeopleOutline } from "react-icons/io5";
 import { SlNotebook } from "react-icons/sl";
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 const Read = ({ read }) => {
     console.log(read);
-    const { image, yearOfPublishing, totalPages, tags, rating, bookName, author, publisher, category } = read;
+    const { image, yearOfPublishing, totalPages, tags, rating, bookName, author, publisher, category, bookId } = read;
     return (
         <div className="border my-5 gap-5 flex border-[#13131326] p-5 rounded-2xl">
             <div className="bg-[#1313130d] p-10 rounded-2xl">
@@ -42,7 +43,9 @@ const Read = ({ read }) => {
                 <div className="flex font-medium items-center gap-10">
                     <h3 className="bg-[#328eff26] px-5 py-2 rounded-full text-[#328EFF]">Category: {category}</h3>
                     <h3 className="px-5 text-[#FFAC33] py-2 rounded-full bg-[#ffac3326]">Rating: {rating}</h3>
-                    <button className="px-5 text-white py-2 rounded-full bg-[#23BE0A]">View Details</button>
+                    
+                    {/* to={`/bookdetails/${bookId}` */}
+                    <Link to={`/bookdetails/${bookId}`}><button className="px-5 text-white py-2 rounded-full bg-[#23BE0A]">View Details</button></Link>
                 </div>
             </div>
         </div>
