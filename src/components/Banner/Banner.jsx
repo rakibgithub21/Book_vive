@@ -17,7 +17,7 @@ const Banner = () => {
                 </button>
             </div>
             <div>
-                <img className='w-[320px] object-cover' src={bookImages} alt="" />
+                <img className='w-[320px] ' src={bookImages} alt="" />
             </div>
         </div>
     );
