@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import EmptyBar from "./EmptyBar";
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 const getPath = (x, y, width, height) => {
@@ -29,7 +29,7 @@ const PagesToRead = () => {
         <div>
             {
                 readLs.length === 0 ? <EmptyBar></EmptyBar> : <BarChart
-                    width={1000}
+                    width={1200}
                     height={700}
                     data={readLs}
                     margin={{
@@ -42,6 +42,7 @@ const PagesToRead = () => {
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="bookName" />
                     <YAxis />
+                    <Tooltip />
                     <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                         {readLs.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={colors[index % 20]} />
