@@ -50,7 +50,7 @@ const Upcomming = () => {
                 ))}
             </div>
             <div className="flex justify-center">
-                <button onClick={upComing} className="mt-4 bg-green-700 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full">See Details</button>
+                <button onClick={upComing} className="mt-4 bg-green-700 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full">Wanted Book</button>
             </div>
         </div>
     );
