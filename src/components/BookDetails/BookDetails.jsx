@@ -7,9 +7,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetails = () => {
     const books = useLoaderData();
+    console.log(books);
     const { id } = useParams();
     const book = books.find(book => book.bookId == id);
-    const { image, bookName, review, author, category, tags } = book;
+    const { image, bookName, review, author, category, tags, totalPages, publisher, yearOfPublishing, rating } = book;
 
     const addToReadLS = () => {
         const saveData = JSON.parse(localStorage.getItem('readList')) || [];
@@ -72,10 +73,10 @@ const BookDetails = () => {
                         <p>Rating:</p>
                     </div>
                     <div className="text-[#131313] font-semibold">
-                        <p>281</p>
-                        <p>J.B Lippincott & Co.</p>
-                        <p>1960</p>
-                        <p>4.8</p>
+                        <p>{totalPages}</p>
+                        <p>{publisher}</p>
+                        <p>{yearOfPublishing}</p>
+                        <p>{rating}</p>
                     </div>
                 </div>
 
