@@ -9,7 +9,8 @@ import BookDetails from "../components/BookDetails/BookDetails";
 import ErrorPage from "./ErrorPage";
 import CustomerReview from "./CustomerReview";
 import SuccesStory from "./SuccesStory";
-import BookRecommendationsPage from "./BookRecommendationsPage ";
+import Upcomming from "./Upcomming";
+import UpCommingDetails from "./UpCommingDetails";
 
 export const router = createBrowserRouter([
     {
@@ -43,9 +44,13 @@ export const router = createBrowserRouter([
                 element:<SuccesStory></SuccesStory>
             },
             {
-                path: '/recommendations',
-                element:<BookRecommendationsPage></BookRecommendationsPage>
+                path: '/upcoming',
+                element:<Upcomming></Upcomming>
             },
+            {
+                path: '/up-commingDetails',
+                element:<UpCommingDetails></UpCommingDetails>
+            }
         ]
     },
 

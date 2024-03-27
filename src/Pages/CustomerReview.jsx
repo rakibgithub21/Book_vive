@@ -14,16 +14,10 @@ const CustomerReview = () => {
                 <div className='space-y-5 text-lg my-10 md:my-0'>
                     <h1 className='text-[#ff226f] font-medium text-4xl'>Read what our customers love about us</h1>
                     <p>
-                        At DreamScape Adventure, we take pride in creating unforgettable travel experiences, and our
-                        customers have spoken!
-                        Here is what they love about us:
+                        Extensive Selection: Our library boasts a vast and diverse collection of books spanning across genres, from gripping thrillers and heartwarming romances to thought-provoking literary fiction and captivating fantasy epics. With new releases and timeless classics alike, there is something to satisfy every reading appetite.
                     </p>
                     <p>
-                        We take pride in our role of enhancing numerous journeys, ensuring each one is a masterpiece of
-                        unforgettable moments.
-                        With our dedicated support, we have turned ordinary trips into extraordinary adventures. Let us continue
-                        to make your
-                        journey the best it can be, creating memories that last a lifetime.
+                        Curated Excellence: We meticulously curate our selection, ensuring that each book meets our rigorous standards of quality, creativity, and literary merit. Our customers trust us to deliver only the most exceptional reads, carefully chosen to enrich their reading experiences.
                     </p>
                     <button onClick={showStories} type="button" className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-red-300 dark:focus:ring-red-800 font-semibold rounded-lg text-lg px-5 py-2.5 text-center mr-2 mb-2">Read our success stories...</button>
 
