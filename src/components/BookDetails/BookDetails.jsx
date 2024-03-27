@@ -30,14 +30,22 @@ const BookDetails = () => {
         const wishlist = JSON.parse(localStorage.getItem('wishList')) || [];
         const exist = readList.find(read => read.bookId == id);
         const wExist = wishlist.find(read =>read.bookId == id)
-        if (exist || wExist) {
-            toast.error('You already add this');
+        if (exist) {
+            if (wExist) {
+                toast.error('You already add this')
+            } else {
+                toast.error('You already read this')
+            }
+        } else {
+            if (wExist) {
+                toast.error('You already add this')
+            } else {
+                wishlist.push(book);
+                localStorage.setItem('wishList', JSON.stringify(wishlist));
+                toast.success('You add succesfully')
+            }
         }
-        else {
-            wishlist.push(book);
-            localStorage.setItem('wishList', JSON.stringify(wishlist));
-            toast.success('You added succesfully');
-        }
+
 
 
     }
