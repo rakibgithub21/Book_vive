@@ -30,7 +30,7 @@ const BookDetails = () => {
         const exist = readList.find(read => read.bookId == id);
         const wExist = wishlist.find(read =>read.bookId == id)
         if (exist || wExist) {
-            toast.error('You already read this');
+            toast.error('You already add this');
         }
         else {
             wishlist.push(book);
